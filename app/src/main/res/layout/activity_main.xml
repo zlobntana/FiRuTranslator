@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Финско-Русский переводчик"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#EA6A69"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="14dp"
+        android:background="#F1DEDE"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="10sp"
+        android:textColor="#EA6A69"
+        android:textColorHint="#978A89"
+        android:hint="Введите слово для перевода"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="14dp"
+        android:text="Перевести"
+        android:backgroundTint="#EA6A69"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="14dp"
+        android:background="#EFECEC"
+        android:gravity="top"
+        android:padding="10sp"
+        android:textColor="#EA6A69"
+        android:textColorHint="#978A89"
+        android:textSize="17sp"
+        android:hint="Результат перевода"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="336dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#E6BFCC"
+        android:text="Озвучить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputText"
+        app:layout_constraintVertical_bias="0.054" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
